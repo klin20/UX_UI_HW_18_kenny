@@ -1,0 +1,47 @@
+nav {
+    display: inline-block;
+    vertical-align: top;
+    width: 73%;
+    padding: 1%;
+    justify-content: flex-start;
+    
+}
+body {
+    background-image: linear-gradient(white, lightgray);
+}
+.logo {
+    width: 10%;
+    padding: 1%;
+    }
+
+    
+ul {
+    width: 50%;
+    margin-left: auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.heroImage {
+    height: 600px;
+    padding: 25px;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+button {
+    background-color: beige;
+}
+
+footer {
+    background-color:lightgray;
+    padding: 100px ; 
+    
+}
+
+    
+    
