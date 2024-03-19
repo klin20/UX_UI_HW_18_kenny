@@ -1,9 +1,13 @@
+.inline-block {
+    display: inline-block;
+}
+
 nav {
     display: inline-block;
     vertical-align: top;
-    width: 73%;
+    width: 80%;
     padding: 1%;
-    justify-content: flex-start;
+    text-align: right;
     
 }
 body {
@@ -22,9 +26,15 @@ ul {
     vertical-align: top;
 }
 
+li {
+    padding-left: 5% ;
+    padding-right: 5% ;
+}
+
 .heroImage {
-    height: 600px;
-    padding: 25px;
+   padding: 25px;
+   
+   
 }
 
 .content {
@@ -37,11 +47,126 @@ button {
     background-color: beige;
 }
 
+.mySkills {
+    margin: 20px 0;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skillItem {
+    width: 30%; 
+    margin: 0 1.5%; 
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.skillItem img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.skillItem h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.skillItem p {
+    font-size: 0.9em;
+}
+
+.myWork {
+    margin-top: 40px;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-areas:
+        "project1 project2"
+        "project3 project4";
+    grid-template-columns: 1fr 1fr; /
+    grid-gap: 40px; 
+
+.projectItem1 {
+    grid-area: project1;
+}
+
+.projectItem2 {
+    grid-area: project2;
+}
+
+.projectItem3 {
+    grid-area: project3;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.projectItem4 {
+    grid-area: project4;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.projectItem3 h4,
+.projectItem4 h4 {
+    margin-bottom: 10px;
+}
+
+.projectItem3 p,
+.projectItem4 p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+
+.projectItem3 button,
+.projectItem4 button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.projectItem3 button:hover,
+.projectItem4 button:hover {
+    background-color: #0056b3;
+}
+
 footer {
     background-color:lightgray;
-    padding: 100px ; 
+    padding: 100px ;
+    text-align: right; 
     
 }
 
-    
+@media screen and (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+
+    .flexContainer > div {
+        width: 100%;
+    }
+
+    .workGrid {
+        grid-template-areas:
+            "project1"
+            "project2"
+            "project3"
+            "project4";
+        grid-template-columns: 100%; 
+        grid-template-rows: auto; 
+    }
+}   
     
